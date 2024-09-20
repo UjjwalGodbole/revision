@@ -1,0 +1,33 @@
+<%- layout("/layouts/boilerplate.ejs") %>
+
+    <div class="row">
+     <div class="col-8 offset-2">
+        <br><br>
+    <h3>Create a new Revision</h3><br>
+    <form method="post" action="/listings">
+        <div class="mb-2">
+            <label for="title" class="form-label">Subject</label>
+            <input type="text" placeholder="Add subject name" class="form-control" name="listing[subject]">
+        </div>
+        <div class="mb-2">
+            <label for="description" class="form-label">Topics</label>
+            <textarea name="listing[topics]" placeholder="Add topics" class="form-control"></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="location" class="from-label">Note</label>
+            <input type="text" name="listing[note]" placeholder="Add note" class="form-control">
+        </div>
+        <div class="mb-4">
+            <label for="images" class="from-label">Images</label>
+            <textarea style="border: dotted;cursor:pointer !important" placeholder="upload images" class="form-control"></textarea>
+        </div>
+        <div class="mb-2">
+            
+            <i class="fa-solid fa-face-sad-tear emoji" style="color: rgb(250, 221, 2);margin-left:0px"></i>
+            <i class="fa-solid fa-face-smile emoji" style="color:green"></i>
+            <i class="fa-solid fa-face-laugh emoji" style="color: blue;"></i>
+        </div><br>
+        <button class="btn btn-dark ">Save</button><br><br>
+    </form>
+</div>
+</div>

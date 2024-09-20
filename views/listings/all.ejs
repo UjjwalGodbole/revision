@@ -1,0 +1,33 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<body>
+    <br><br>
+    <h3>All Revisions:</h3>
+    <br>
+    
+    <% for(listing of alllisting){ %>
+        <div class="index-div" style="cursor: pointer;">
+            <div>
+               <p><b>Subject Name: </b><%= listing.subject %></p>
+               <p><b>Topics Name: </b><%= listing.topics %></p>
+               <p><b>Note: </b><%= listing.note %></p>
+            </div>
+            <div style="display:flex; flex-direction:column;align-items:end;justify-content:center">
+                <div style="margin-bottom: 3.6rem;">
+                    20/9/11
+                </div>
+                <div>
+                    <div style="display: flex;flex-direction:row">
+          <a href="/listings/<%= listing._id%>/edit" class="btn btn-dark" style="margin-right: .5rem;" >Edit</a>
+           <form method="post" action="/listings/<%= listing._id %>?_method=delete">
+               <button class="btn btn-danger">Delete</button>
+           </form>
+
+        </div>
+        </div>
+        </div>
+           </div>
+           <hr>
+    <% } %>
+</body>
+  

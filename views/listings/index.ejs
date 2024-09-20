@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<body>
+    <br><br>
+    <h3>To do:</h3>
+    <br>
+    <% for(listing of alllisting){ %>
+        <a style="text-decoration: none; color:black" href="/listings/<%= listing.id %>">
+            <div class="index-div" style="cursor: pointer;">
+             <div>
+                <p><b>Subject Name: </b><%= listing.subject %></p>
+                <p><b>Topics Name: </b><%= listing.topics %></p>
+                <p><b>Note: </b><%= listing.note %></p>
+             </div>
+              
+            <form method="post" action="/listings/<%= listing._id %>?_method=delete">
+                <button class="btn btn-danger">Delete</button>
+            </form>
+            </div>
+        </a>
+        <hr>
+    <% } %>
+</body>
+  

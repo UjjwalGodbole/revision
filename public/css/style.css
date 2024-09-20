@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  height: 140vh;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.container{
+  flex: 1;
+}
+
+/* nav */
+.navbar{
+    height: 5rem ;
+    background-color: white;
+    padding: 0 !important;
+    margin: 0 !important;
+   
+}
+.fa-registered{
+    color: rgb(61, 60, 60) ;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+.nav-link{
+  color: rgb(0, 0, 0) !important;
+}
+.borderbottom{
+  border-bottom: 1px solid rgb(210, 208, 208);
+}
+.navbar-brand a i:hover {
+  transform: rotateX(40deg);
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+/* footer */
+.f-info{
+  margin-top: 100px;
+  height: 8rem;
+  background-color: #ebebeb;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.f-info-socials i{
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.f-info-socials,.f-info-brand,.f-info-links{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+.card{
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body{
+  padding: 0 !important;
+}
+.cardtext p{
+  font-weight:400 ;
+}
+.listing-links{
+  text-decoration: none !important;
+}
+.card-img-overlay{
+  opacity: 0;
+}
+.card-img-overlay:hover{
+  opacity: .2;
+  background-color: white;
+}
+
+/* new page */
+.add-bt{
+  background-color: rgb(61, 60, 60) !important;
+  border:  none !important;
+}
+
+/* show page */
+.showImg{
+  height: 30vh;
+}
+.btns{
+    display: flex;
+
+}
+.showCard{
+  padding-left: 0;
+  padding-right: 0;
+}
+/* index route */
+.emoji{
+  font-size: 25px;
+  margin-left: 20px;
+}
+.index-div{
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+}
