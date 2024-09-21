@@ -6,7 +6,7 @@ body{
   font-family: "Plus Jakarta Sans", sans-serif !important;
   display: flex;
   flex-direction: column;
-  height: 140vh;
+  height: 130vh;
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -16,7 +16,7 @@ body{
 
 /* nav */
 .navbar{
-    height: 5rem ;
+    height: 5rem !important ;
     background-color: white;
     padding: 0 !important;
     margin: 0 !important;
@@ -118,4 +118,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items:end;
+}
+/* homepage */
+.list-group span{
+      font-size: 1rem !important;
+      margin-left: 2rem;
 }
