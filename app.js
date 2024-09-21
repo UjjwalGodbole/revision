@@ -29,8 +29,9 @@ app.use(express.static('public'));
 
 
 //home route
-app.get("/",(req,res)=>{
-    res.send("Introduction page for Revision app");
+app.get("/",async(req,res)=>{
+    const alllisting = await Listing.find({});
+    res.render("listings/home.ejs",{alllisting});
 })
 
 app.get("/all",async(req,res)=>{
