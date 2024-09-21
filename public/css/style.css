@@ -40,7 +40,7 @@ body{
 /* footer */
 .f-info{
   margin-top: 100px;
-  height: 8rem;
+  height: 9rem;
   background-color: #ebebeb;
   text-align: center;
   display: flex;
@@ -51,6 +51,7 @@ body{
 .f-info-socials i{
   font-size: 1.2rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 .f-info-socials,.f-info-brand,.f-info-links{
   width: 100%;
