@@ -61,7 +61,7 @@ body{
 }
 .f-info-links a{
   text-decoration: none;
-  color: #222222;
+  color: #b8b3b3;
 }
 .f-info-links a:hover{
   text-decoration: underline;
@@ -127,4 +127,7 @@ body{
 }
 .list-group li{
   cursor: pointer;
+}
+.style{
+  height: 300px !important;
 }
