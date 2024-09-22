@@ -33,10 +33,7 @@ body{
 .borderbottom{
   border-bottom: 1px solid rgb(210, 208, 208);
 }
-.navbar-brand a i:hover {
-  transform: rotateX(40deg);
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
+
 /* footer */
 .f-info{
   margin-top: 100px;
@@ -130,4 +127,7 @@ body{
 }
 .style{
   height: 300px !important;
+}
+b{
+  font-weight: 600 !important;
 }
