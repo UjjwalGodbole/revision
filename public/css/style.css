@@ -131,3 +131,29 @@ body{
 b{
   font-weight: 600 !important;
 }
+
+.user-menu {
+  position: relative; 
+}
+.hover-suggestion {
+  height: 7rem;
+  width:5.7rem ;
+  opacity: 0;
+  visibility: hidden; 
+  position: absolute;
+  top: 150%; 
+  right: 0;
+  z-index: 100;
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+.user-menu:hover .hover-suggestion, 
+.hover-suggestion:hover {
+  opacity: 1;
+  visibility: visible; 
+}
+.hover-suggestion a {
+  text-decoration: none;
+  color: #f2f5f8;
+  display: block;
+}
+
